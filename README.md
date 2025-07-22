@@ -10,8 +10,8 @@ Ce scrpit Python permet d'interroger l'API publique de MétéoFrance pour:
 
 * Python 3.7 ou plus
 * Bibliothèque Python : requests, json, cs, unicodedata, os
-* Un compte utilisateur pour l'API publique de Météofrance : [Création d'un compte utilisateur API publique météofrance][https://portail-api.meteofrance.fr/authenticationendpoint/login.do?client_id=q86Efxg3AWJQ2KJQ25EZsJw1cfAa&code_challenge=j9od4ajyCtjSmGsRqSOOlxEW_Ib-Y3kL6d5FZTCI5BY&code_challenge_method=S256&commonAuthCallerPath=%2Foauth2%2Fauthorize&forceAuth=false&passiveAuth=false&redirect_uri=https%3A%2F%2Fportail-api.meteofrance.fr%2Fweb%2Ffr&response_mode=query&response_type=code&scope=openid+profile+apim%3Asubscribe&state=request_0&tenantDomain=carbon.super&sessionDataKey=609dafe8-2c6b-4879-a99e-68b33b7c9594&relyingParty=q86Efxg3AWJQ2KJQ25EZsJw1cfAa&type=oidc&sp=apim_portail&isSaaSApp=true&authenticators=BasicAuthenticator%3ALOCAL]
-* Un token d'accès valide à l'API publique de Météofrance : [Portail Api MétéoFrance][https://portail-api.meteofrance.fr/web/fr/]
+* Un compte utilisateur pour l'API publique de Météofrance : [Création d'un compte utilisateur API publique météofrance](https://portail-api.meteofrance.fr/authenticationendpoint/login.do?client_id=q86Efxg3AWJQ2KJQ25EZsJw1cfAa&code_challenge=j9od4ajyCtjSmGsRqSOOlxEW_Ib-Y3kL6d5FZTCI5BY&code_challenge_method=S256&commonAuthCallerPath=%2Foauth2%2Fauthorize&forceAuth=false&passiveAuth=false&redirect_uri=https%3A%2F%2Fportail-api.meteofrance.fr%2Fweb%2Ffr&response_mode=query&response_type=code&scope=openid+profile+apim%3Asubscribe&state=request_0&tenantDomain=carbon.super&sessionDataKey=609dafe8-2c6b-4879-a99e-68b33b7c9594&relyingParty=q86Efxg3AWJQ2KJQ25EZsJw1cfAa&type=oidc&sp=apim_portail&isSaaSApp=true&authenticators=BasicAuthenticator%3ALOCAL)
+* Un token d'accès valide à l'API publique de Météofrance : [Portail Api MétéoFrance](https://portail-api.meteofrance.fr/web/fr/)
 
 ## Installation
 
@@ -66,7 +66,7 @@ csv_data_registered/
 
 ## Remarques
 
-* Le **token API** est actuellement codé en dur dans le script. Ne pas exposer en public.
+* Le **token API** est actuellement codé en dur dans le script. Ne pas exposer en public. La durée d'un token est d'une heure, lorsque le délai est dépassé il est obligatoire de générer un nouveau token via la session ouverte et ensuite de remplacer l'ancien token, par sa nouvelle valeur généré.
 * Le script est configuré pour interroger les stations en **Nouvelle-Calédonie** (num_dep="988).
 * Le dossier csv_data_registered sera automatiquement crée s'il n'existe pas.
 
