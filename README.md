@@ -18,7 +18,7 @@ Ce scrpit Python permet d'interroger l'API publique de MétéoFrance pour:
 Aucune installation particulière n'est nécessaire. Clonez ce dépôt et éxecutez le fichier Python :
 
 ```bash
-git clone https://
+git clone https://github.com/bananiaNc/modele_de_vent.git
 ```
 
 ## Utilisation
