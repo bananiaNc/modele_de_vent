@@ -25,11 +25,11 @@ git clone https://github.com/bananiaNc/modele_de_vent.git
 
 Le script se lance via la ligne de commande et vous guide étape par étape:
 
-1. Choisissez un paramètre climatique (ex: Température, Vent, Précipitations, etc.).
-2. Séléctionnez la fréquence d'enregistrement (6 minutes, horaire, quotidienne, etc.).
+1. Choisissez un paramètre climatique (ex: `Température`, `Vent`, `Précipitations`, etc.).
+2. Séléctionnez la fréquence d'enregistrement (`6 minutes`, `horaire`, `quotidienne`, etc.).
 3. Choisissez une station météo parmi celles disponibles dans le département.
-4. Indiquez la période souhaitée (date de début, date de fin).
-5. Les données sont téléchargées au format CSV dans le dossier csv_data_registered.
+4. Indiquez la période souhaitée (`date de début`, `date de fin`).
+5. Les données sont téléchargées au format CSV dans le dossier `csv_data_registered`.
 
 ### Exemple de fichier généré
 
