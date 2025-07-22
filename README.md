@@ -67,8 +67,8 @@ csv_data_registered/
 ## ⚠️ Remarques
 
 * Le **token API** est actuellement codé en dur dans le script. ⚠️ Ne pas exposer en public. La durée d'un token est d'une heure, lorsque le délai est dépassé il est obligatoire de générer un nouveau token via la session ouverte et ensuite de remplacer l'ancien token, par sa nouvelle valeur généré.
-* Le script est configuré pour interroger les stations en **Nouvelle-Calédonie** (num_dep="988).
-* Le dossier csv_data_registered sera automatiquement crée s'il n'existe pas.
+* Le script est configuré pour interroger les stations en **Nouvelle-Calédonie** `(num_dep="988)`.
+* Le dossier `csv_data_registered` sera automatiquement crée s'il n'existe pas.
 
 ## Structure des fonctions
 
